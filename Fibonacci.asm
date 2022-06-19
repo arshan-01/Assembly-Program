@@ -12,16 +12,21 @@ main PROC
 		mov edx,offset msg1
 		call writestring
 		call readint
-		mov   ebx, 1  ; initial setup   
+		mov temp,eax
+		mov eax,1
+		call writedec
+		mov al," "
+		call writechar
+		mov   ebx, 0  ; initial setup   
 		mov   edx, 1   
-		mov   ecx, eax  ; count
+		mov   ecx, temp  ; count
 	L1:    
 		mov  eax, ebx     ; eax = ebx + edx    
 		add  eax, edx
 		mov  temp, edx 
 
 		call writedec
-		mov temp,eax
+		mov temp,eax 
 		mov al," "
 		call writechar
 		mov eax,temp

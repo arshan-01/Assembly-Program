@@ -1,6 +1,6 @@
 comment!
 Write a program that uses a loop to generate Fibonacci Series till a number entered by User
-described by the following formula: Fib(1) = 1, Fib(2) = 1, Fib(n) = Fib(n – 1) + Fib(n – 2). !
+described by the following formula: Fib(1) = 2, Fib(2) = 3, Fib(n) = Fib(n – 1) + Fib(n – 2). !
 
 INCLUDE Irvine32.inc
 .data
